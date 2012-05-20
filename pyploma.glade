@@ -41,11 +41,20 @@
                     <property name="visible">True</property>
                     <child>
                       <object class="GtkImageMenuItem" id="imagemenuitem7">
-                        <property name="label">Ejecutar</property>
+                        <property name="label">Crear</property>
                         <property name="visible">True</property>
                         <property name="image">image1</property>
                         <property name="use_stock">False</property>
                         <signal name="activate" handler="onLoadActivate"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="imagemenuitem1">
+                        <property name="label">Unir</property>
+                        <property name="visible">True</property>
+                        <property name="image">image2</property>
+                        <property name="use_stock">False</property>
+                        <signal name="activate" handler="onJoinActivate"/>
                       </object>
                     </child>
                   </object>
@@ -82,7 +91,7 @@
         <child>
           <object class="GtkTable" id="table1">
             <property name="visible">True</property>
-            <property name="n_rows">6</property>
+            <property name="n_rows">7</property>
             <property name="n_columns">2</property>
             <property name="column_spacing">2</property>
             <property name="row_spacing">4</property>
@@ -214,6 +223,20 @@
                 <property name="bottom_attach">6</property>
               </packing>
             </child>
+            <child>
+              <object class="GtkLabel" id="label7">
+                <property name="visible">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">2</property>
+                <property name="top_attach">6</property>
+                <property name="bottom_attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
           </object>
           <packing>
             <property name="position">1</property>
@@ -264,6 +287,10 @@
   </object>
   <object class="GtkImage" id="image1">
     <property name="visible">True</property>
-    <property name="stock">gtk-missing-image</property>
+    <property name="stock">gtk-execute</property>
+  </object>
+  <object class="GtkImage" id="image2">
+    <property name="visible">True</property>
+    <property name="stock">gtk-execute</property>
   </object>
 </interface>
